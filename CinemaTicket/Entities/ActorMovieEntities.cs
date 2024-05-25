@@ -1,11 +1,10 @@
 ﻿namespace CinemaTicket.Entities
 {
-    public class SitSansEntities
+    public class ActorMovieEntities
     {
         public int Id { get; set; }
-        public SitEntities SitId { get; set; }
-        public SansEntities SansId { get; set; }
-        public SitSansStatusEntities SitSansStatusId { get; set; }
+        public MovieEntities MovieId { get; set; }
+        public ActorEntities ActorId { get; set; }
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
         public int ByUserId { get; set; }
