@@ -7,8 +7,8 @@
         public SansEntities SansId { get; set; }
         public UserEntities UserId { get; set; }
         public TicketStatusEntities TicketStatusId { get; set; }
-        public decimal SellPrice { get; set; }
-        public decimal Price { get; set; }
+        public int SellPrice { get; set; }
+        public int Price { get; set; }
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
     }

@@ -7,8 +7,8 @@
         public UserEntities UserId { get; set; }
         public OnlineEntities OnlineId { get; set; }
         public UsercreaditTypeEntities TypeId { get; set; }
-        public decimal Price { get; set; }
-        public decimal TotalPrice { get; set; }
+        public int Price { get; set; }
+        public int TotalPrice { get; set; }
         public string Description { get; set; }
         public string Direction { get; set; }
         public DateTime CreateDate { get; set; }
