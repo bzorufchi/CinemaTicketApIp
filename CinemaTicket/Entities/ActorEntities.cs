@@ -11,5 +11,7 @@
         public int ByUserId { get; set; }
         public int Isactive { get; set; }
         public DateTime CreateDate { get; set; }
+        public ICollection<MovieEntities> CinemaMovies { get; set; }
+        public ICollection<ActorMovieEntities> ActorMovies { get; set; }
     }
 }

@@ -15,5 +15,12 @@
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
         public int ByUserId { get; set; }
+        public ICollection<ActorEntities> Actors { get; set; }
+        public ICollection<CinemaMovieEntities> CinemaMovies { get; set; }
+        public ICollection<ActorMovieEntities> ActorMovies { get; set; }
+        public ICollection<CommentsMovieEntities> CommentsMovies { get; set; }
+        public ICollection<MovieDetailEntities> MovieDetails { get; set; }
+        public ICollection<MoviePhotosLocationsEntities> MoviePhotosLocations { get; set; }
+        public ICollection<SansEntities> Sanses { get; set; }
     }
 }

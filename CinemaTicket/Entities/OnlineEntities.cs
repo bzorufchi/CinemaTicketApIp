@@ -10,5 +10,6 @@
         public int TransNo { get; set; }
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
+        public ICollection<UsercreaditEntities> Usercreadits { get; set; }
     }
 }

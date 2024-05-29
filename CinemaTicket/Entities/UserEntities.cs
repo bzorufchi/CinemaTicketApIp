@@ -12,6 +12,12 @@
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
         public int ByUserId { get; set; }
-
+        public ICollection<CommentsMovieEntities> CommentsMovies { get; set; }
+        public ICollection<OnlineEntities> Onlines { get; set; }
+        public ICollection<TicketEntities> Tickets { get; set; }
+        public ICollection<UsercreaditEntities> Usercreadits { get; set; }
+        public ICollection<UserQuestionAnswerEntities> UserQuestionAnswers { get; set; }
+        public ICollection<UserRateAverageEntities> UserRateAverages { get; set; }
+        public ICollection<UserRoleEntities> UserRoles { get; set; }
     }
 }

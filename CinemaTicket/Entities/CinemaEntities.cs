@@ -15,5 +15,8 @@
         public DateTime CreateDate { get; set; }
         public int Isactive { get; set; }
         public int ByUserId { get; set; }
+        public ICollection<MovieEntities> Movies { get; set; }
+        public ICollection<UserQuestionAnswerEntities> UserQuestionAnswers { get; set; }
+        public ICollection<UserRateAverageEntities> UserRateAverages { get; set; }
     }
 }
