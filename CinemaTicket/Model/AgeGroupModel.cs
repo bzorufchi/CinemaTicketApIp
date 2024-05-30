@@ -2,25 +2,15 @@
 {
     public class AgeGroupModel
     {
-        public class GetAllAgeGroupOutput
+      public class AgeGroupInput
         {
-
+            public int Id { get; set; }
         }
-        public class InsertAgeGroupInput
-        {
-
-        }
-        public class UpdateAgeGroupInput
-        {
-
-        }
-        public class UpdateIsActiveAgeGroupInput
-        {
-
-        }
-        public class DeleteAgeGroupInput
-        {
-
+        public class AgeGroupOutput: AgeGroupInput {
+            public string AgeGroupName { get; set; }
+            public DateTime CreateDate { get; set; }
+            public int Isactive { get; set; }
+            public int ByUserId { get; set; }
         }
     }
 }

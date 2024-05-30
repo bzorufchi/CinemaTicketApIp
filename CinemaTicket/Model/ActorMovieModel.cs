@@ -2,25 +2,16 @@
 {
     public class ActorMovieModel
     {
-        public class GetAllActorMovieOutput
+       public class ActorMovieInput
         {
-
+            public int Id { get; set; }
         }
-        public class InsertActorMovieInput
-        {
-
-        }
-        public class UpdateActorMovieInput
-        {
-
-        }
-        public class UpdateIsActiveActorMovieInput
-        {
-
-        }
-        public class DeleteActorMovieInput
-        {
-
+        public class ActorMovieOutput : ActorMovieInput {
+            public int MovieId { get; set; }
+            public int ActorId { get; set; }
+            public DateTime CreateDate { get; set; }
+            public int Isactive { get; set; }
+            public int ByUserId { get; set; }
         }
     }
 }

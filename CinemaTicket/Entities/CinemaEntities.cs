@@ -3,7 +3,7 @@
     public class CinemaEntities
     {
         public int Id { get; set; }
-        public CityEntities CityId { get; set; }
+        public int CityId { get; set; }
         public string CinemaName { get; set; }
         public string Address { get; set; }
         public string MainPhoto { get; set; }
